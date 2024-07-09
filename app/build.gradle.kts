@@ -59,10 +59,6 @@ dependencies {
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
-    implementation (libs.retrofit)
-    implementation (libs.converter.gson)
-    implementation(libs.hilt.android)
-    implementation(platform(libs.androidx.compose.bom))
     implementation(libs.androidx.ui.graphics)
     androidTestImplementation(platform(libs.androidx.compose.bom))
     androidTestImplementation(libs.androidx.ui.test.junit4)
@@ -72,11 +68,27 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+
+    //Compose libraries
     implementation(libs.ui)
     implementation(libs.material3)
     implementation (libs.ui.tooling.preview)
     implementation (libs.androidx.lifecycle.runtime.ktx)
     implementation (libs.androidx.activity.compose)
+    implementation(platform(libs.androidx.compose.bom))
+
+    //Hilt Libraries
+    implementation(libs.hilt.android)
+    kapt (libs.hilt.android.compiler)
+    implementation (libs.androidx.hilt.lifecycle.viewmodel)
+    kapt (libs.androidx.hilt.compiler)
+    implementation (libs.androidx.hilt.navigation.compose)
+
+    //retrofit libraries
+    implementation (libs.retrofit)
+    implementation (libs.converter.gson)
+    implementation (libs.okhttp)
+    implementation (libs.logging.interceptor)
 }
 kapt {
     correctErrorTypes = true
