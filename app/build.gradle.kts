@@ -89,6 +89,9 @@ dependencies {
     implementation (libs.converter.gson)
     implementation (libs.okhttp)
     implementation (libs.logging.interceptor)
+
+    //Load Image
+    implementation(libs.coil.compose)
 }
 kapt {
     correctErrorTypes = true

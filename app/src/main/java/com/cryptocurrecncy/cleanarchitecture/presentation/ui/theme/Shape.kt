@@ -1,4 +1,4 @@
-package com.cryptocurrecncy.cleanarchitecture.ui.theme
+package com.cryptocurrecncy.cleanarchitecture.presentation.ui.theme
 
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.Shapes
